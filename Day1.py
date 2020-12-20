@@ -13,5 +13,13 @@ def findNum(num, inputs):
             otherNumber = inputs[sums.index(2020)]
             return number * otherNumber
 
+def findNumPt2(num, inputs):
+    # trying the brute force bc I'm tired
+    for number1 in inputs:
+        for number2 in inputs:
+            for number3 in inputs:
+                if number1 + number2 + number3 == num:
+                    return number1 * number2 * number3
 
 print(findNum(2020,inputs))
+print(findNumPt2(2020,inputs))
